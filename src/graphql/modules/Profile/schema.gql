@@ -1,0 +1,25 @@
+enum ProfileType {
+  ADMIN 
+  USER
+  TEST
+}
+
+type Profile {
+  id: Int
+  description: ProfileType
+  created_at: String
+}
+
+input ProfileInput {
+  description: ProfileType
+}
+
+type Mutation {
+  createProfile(
+    data: ProfileInput 
+  ): Profile!
+}
+
+type Query {
+  profiles: [Profile]
+}
