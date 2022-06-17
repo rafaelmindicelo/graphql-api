@@ -10,6 +10,7 @@ This is my first project using GraphQL, a simple one, designed just for knowledg
 - Apollo-Server
 - Knex
 - Postgres
+- Docker
 
 ## How to run the project
 
@@ -19,9 +20,13 @@ Run this script to clone the repository
 
 #
 
+```cd graphql-api```
+
+Run this script to get inside the project and then:
+
 ```npm i```
 
-Run this script to install all the dependencies
+to install all the dependencies
 #
 ```docker run --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=docker -d postgres```
 
